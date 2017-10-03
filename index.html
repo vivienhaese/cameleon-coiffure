@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Caméléon coiffure - salon homme femme angers</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Salon coiffure homme femme angers, ambiance tendance et accueil professionel" />
+		<meta name="keywords" content="cameleon coiffure angers coiffeur mariage chignon coupe homme femme enfant" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/lab.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+        
+        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-60172877-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+        <script>
+            $(document).ready(function() {
+                $('#monForm').on('submit', function() {
+                    var mail = $('#email').val();
+                    if(mail == '') {
+                        alert('Les champs doivent êtres remplis');
+                    } else {
+                        $.ajax({
+                            url: $(this).attr('action'),
+                            type: $(this).attr('method'),
+                            data: $(this).serialize(),
+                            success: function(html) { 
+                                alert(html); 
+                            }
+                        });
+                    }
+                    return false; 
+                });
+            });
+        </script>
+        
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo"><a href="#">Caméléon coiffure</a></h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Accueil</a></li>
+							<li><a href="#one">Présentation</a></li>
+							<li><a href="#work">Le salon en image</a></li>
+							<li><a href="#tarifs">Tarifs</a></li>
+							<li><a href="#two">Informations utiles</a></li>
+							<li><a href="#contact">Newsletter</a></li>
+						</ul>
+					</nav>
+
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h1>Caméléon</h1>
+					</header>
+					<p>Votre salon de coiffure vous ouvre ses portes du mardi au samedi au<br/>51 avenue Patton à Angers.<br/>
+					Venez y découvrir une ambiance élégante, teintée de couleurs noire et camel,
+					et apprécier l'accueil et le professionnalisme de Pauline, la gérante.</p>
+					<p><strong>02 41 36 04 04</strong></p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Présentation</h2>
+					</header>
+					<p>
+						Depuis mon installation en septembre 2011, ma priorité est la satisfaction du client.<br/>
+                        Venez découvrir mon espace coocooning pour vous détendre et profiter au maximum des conseils et soins qui vous seront prodigués.<br/>
+                        Je travaille avec les produits WELLA et NIOXIN.
+					</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+		
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>Le salon en image</h2>
+						<p>Un café, une décoration soignée, de la musique, un espace attente comfortable, 
+						des fleurs livrées chaque semaines, tout est mis en oeuvre pour que le temps passé
+						au salon soit agréable.</p>
+					</header>
+					
+					<!--
+						 Lightbox Gallery
+						 
+						 Powered by poptrox. Full docs here: https://github.com/n33/jquery.poptrox
+					-->
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/01.jpg" class="image full l"><img src="images/thumbs/01.jpg" title="Machine à café Nespresso" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/02.jpg" class="image full r"><img src="images/thumbs/02.jpg" title="Magazines hebdomadaires" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/03.jpg" class="image full l"><img src="images/thumbs/03.jpg" title="Une petite sucrerie ?" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/04.jpg" class="image full r"><img src="images/thumbs/04.jpg" title="Des produits de qualité" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/05.jpg" class="image full l"><img src="images/thumbs/05.jpg" title="Espace détente" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/06.jpg" class="image full r"><img src="images/thumbs/06.jpg" title="Espace shampoing" alt="" /></a></div>
+							</div>
+						</div>
+
+				</div>
+			</section>
+        
+        
+		<!-- tarifs -->
+			<section id="tarifs" class="main style1 dark fullscreen">
+				<div class="content container small">
+                    <i><small>Tarifs basés sur cheveux courts.</small></i>
+					<h4>Tarifs féminin</h4>
+                    <ul>
+                        <li>Sh + coupe + coiffage : 32€50</li>
+                        <li>Shampooing + brushing : 18€</li>
+                        <li>Sh + coupe + coiffage + couleur : 54€</li>
+                        <li>Sh + coupe + coiffage + permanente : 56€</li>
+                        <li>Méches à partir de 17€50</li>
+                        <li>Forfait mariée à partir de 60€</li>
+                    </ul>
+					<h4>Tarifs masculin</h4>
+                    <ul>
+                        <li>Sh + coupe + coiffage : 20€</li>
+                        <li>Forfait étudiant : 17€50</li>
+                    </ul>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+        
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Informations utiles</h2>
+					</header>
+					<p>
+						Le salon est ouvert en continu du mardi au vendredi de 9h à 19h, le samedi de 8h30 à 17h.<br/>
+						Vous pouvez facilement acceder au salon à pied ou en bus. Pour ceux qui circulent en voiture, le stationnement est gratuit. <a href="http://goo.gl/maps/WTTTR">Cliquez ici</a> pour trouvez le meilleur moyen pour vous !<br/>
+
+						Une question ou une demande de rendez-vous, n'hésitez pas à contactez Pauline au 02 41 36 04 04.
+					</p>
+				</div>
+				<a href="#contact" class="button style2 down anchored">Next</a>
+			</section>
+			
+			
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Newsletter</h2>
+						<p>Abonnez-vous à la newsletter pour recevoir les dernières informations concernant le salon : 
+						promotions en cours, fermetures exceptionnelles, nouveaux produits ...</p>
+					</header>
+					<div class="box container small">
+                        <form id="monForm" method="post" action="saveemail.php">
+                            <div class="row half">
+                                <div class="12u"><input id="email" type="text" name="email" placeholder="Email" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="12u">
+                                    <ul class="actions">
+                                        <li><input type="submit" class="button" value="S'abonner" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+			
+				<!--
+				     Social Icons
+				     
+				     Use anything from here: http://fortawesome.github.io/Font-Awesome/cheatsheet/)
+					<ul class="actions">
+						<li><a href="#" class="fa solo fa-twitter"><span>Twitter</span></a></li>
+						<li><a href="#" class="fa solo fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa solo fa-google-plus"><span>Google+</span></a></li>
+						<li><a href="#" class="fa solo fa-dribbble"><span>Dribbble</span></a></li>
+						<li><a href="#" class="fa solo fa-pinterest"><span>Pinterest</span></a></li>
+						<li><a href="#" class="fa solo fa-instagram"><span>Instagram</span></a></li>
+					</ul>
+				-->
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Cameleon coiffure</li>
+						<li>VHA Design</li>
+					</ul>
+			
+			</footer>
+
+	</body>
+</html>
